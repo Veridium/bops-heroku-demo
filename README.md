@@ -1,3 +1,5 @@
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 A sample project to demonstrate the capabilities of IEEE 2410-2017
 
 1. Generate a FRIEND certificate on the BOPS server (see an Administrator)
