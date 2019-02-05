@@ -1,0 +1,27 @@
+{
+  "name": "BOPS Heroku Demo",
+  "description": "IEEE 2410-2017 Authentication with VeridiumID",
+  "repository": "https://github.com/Veridium/bops-heroku-demo",
+  "keywords": [
+    "security", "authentication", "veridium", "bops"
+  ],
+  "success_url": "/",
+  "env": {
+    "EXTERNALID": {
+      "description": "The external identifier of the adaptor",
+      "value": ""
+    },
+    "BOPSSRV": {
+      "description": "The hostname of the IEEE 2410-2017 server",
+      "value": ""
+    },
+    "FRIENDCERT": {
+      "description": "The friend public cert in PEM format",
+      "value": ""
+    },
+    "FRIENDPRIVKEY": {
+      "description": "The friend private key in PEM format",
+      "value": ""
+    }
+  }
+}
