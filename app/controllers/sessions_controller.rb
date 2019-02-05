@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
 	"https://#{ENV['BOPSSRV']}/websec/rest/enterprise/RegisterSessionOpportunity",
 	:ssl_client_cert => friendcert,
 	:ssl_client_key => privkey,
-	:verify_ssl => false)
+	:verify_ssl => true)
 
     data1 = {sessionAliasType: "QR", memberExternalId: ENV['EXTERNALID']}
 
@@ -35,7 +35,7 @@ class SessionsController < ApplicationController
 	"https://#{ENV['BOPSSRV']}/websec/rest/enterprise/AuthenticationRequest",
 	:ssl_client_cert => friendcert,
 	:ssl_client_key => privkey,
-	:verify_ssl => false)
+	:verify_ssl => true)
 
     data1 = {memberExternalId: ENV['EXTERNALID'],authenticationMode: "",profileExternalId: params[:email],extraValues: "",transactionText: ""}
 

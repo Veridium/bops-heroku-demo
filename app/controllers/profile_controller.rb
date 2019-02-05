@@ -13,7 +13,7 @@ class ProfileController < ApplicationController
 	"https://#{ENV['BOPSSRV']}/websec/rest/enterprise/GetSessionStatus",
 	:ssl_client_cert => friendcert,
 	:ssl_client_key => privkey,
-	:verify_ssl => false)
+	:verify_ssl => true)
 
     data1 = {sessionId: session[:vid_auth_session_id]}
 
