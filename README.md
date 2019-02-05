@@ -26,7 +26,7 @@ A sample project to demonstrate the capabilities of IEEE 2410-2017
 4. Open a browser to http://localhost:3000/
 6. Open the Veridium Authenticator app on your mobile device
 7. Click "Log in" on the web site via your browser
-8. Use the QR code or Email-based methods for authentication
+8. Use the QR code (select enrolled name in the mobile app and scan) to authenticate *or* enter an email (for authentication via Push-notification)
 
 You can also deploy the app on Heroku:
 
