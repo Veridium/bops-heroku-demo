@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VeridiumID Test</title>
+  <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/bootswatch/3.3.5/flatly/bootstrap.min.css', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <section id="main" class="container">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default">
+      <a class="navbar-brand" href="/">VeridiumID Test</a>
+      <p id="nav-links" class="navbar-text pull-right">
+        <% if signed_in? %>
+          Welcome back!
+          <%= link_to "Log out", sessions_destroy_path %>
+        <% else %>
+          <%= link_to "Log in", new_session_path %>
+        <% end -%>
+      </p>
+    </nav>
+
+    <%= flash_messages %>
+
+    <%= yield %>
+
+  </section>
+
+  <%= javascript_include_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', 'data-turbolinks-track' => true %>
+  <%= yield :javascript %>
+
+</body>
+</html>

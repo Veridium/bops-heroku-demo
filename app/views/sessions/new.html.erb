@@ -1,0 +1,22 @@
+<%= render 'veridium_modal' %>
+<b>Enter your email (and then press the "LOGIN" button) *OR* scan the QR Code below</b><br/><br/>
+
+
+<div class="input-bar">
+  <div class="input-bar-item width100">
+    <%= form_tag sessions_path, id: "login-form" do %>
+      <div class="input-group">
+	<%= email_field_tag :email, @email, class: "form-control", placeholder: "you@yourdomain.com" %>
+        <span class="input-group-btn">
+          <button class="btn btn-info" type="submit">LOGIN</button>
+        </span>
+      </div>
+    <% end -%>
+  </div>
+</div>
+
+<img src="data:image/png;base64,<%= @qrcode %>"/>
+
+<% content_for :javascript do %>
+  <%= javascript_include_tag 'sessions', 'data-turbolinks-track' => true %>
+<% end %>
