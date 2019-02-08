@@ -1,4 +1,4 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/68e1d0a5d7b0f6455029)
 
 A sample project to demonstrate the capabilities of IEEE 2410-2017
 
