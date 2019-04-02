@@ -6,11 +6,11 @@ API Calls
 
 This project demonstrates the 3 core API calls and you can see them in action in profile_controller.rb and session_controller.rb
 
-1. requestAuthentication - brief description ****************
+1. AuthenticationRequest - Register an authentication request (server is initiating the authentication session asking an authentication device to step in). The phone will receive a push notification ‘authenticate’-NOTIFICATION_AUTHENTICATE
 
-2. getStatus - brief description ****************
+2. GetSessionStatus - Returns the status of the session
 
-3. createsessionOpportunity - brief description ****************
+3. RegisterSessionOpportunity - Register a new session opportunity. Returns QR code.
 
 Prerequisites
 
