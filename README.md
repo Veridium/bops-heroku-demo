@@ -37,13 +37,13 @@ iOS or Android phone with access to App Store
 
 # App Deployment Options
 
-1. Run in Postman (see link at top) 
-    You can exercise the APIs within a Postman collection.
-    On a PC/Mac - Open Postman to your imported BOPS demo collection
-    Create an environment and set
-        url=<your BOPSSRV value>
-        email=<your assigned email value>
-    Add the client certificate and key for BOPSSRV to your Postman certificates in Settings.
+1. Run in Postman (see link at top) . 
+    You can exercise the APIs within a Postman collection.  
+    On a PC/Mac - Open Postman to your imported BOPS demo collection . 
+    Create an environment and set . 
+        url=your BOPSSRV value . 
+        email=your assigned email value . 
+    Add the client certificate and key for BOPSSRV to your Postman certificates in Settings.  
 
 2. Deploy to Heroku (see link at top) and populate the Config Vars
 
