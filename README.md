@@ -82,12 +82,10 @@ Open the Veridium Authenticator app on your mobile device
 
 ## Heroku or Local Build
 On Heroku
-
-                On a PC/Mac - Open a browser to your heroku app
+    On a PC/Mac - open a browser to your heroku app
 
 On local build
-
-                On a PC/Mac - Open a browser to http://localhost:3000/
+     On a PC/Mac - open a browser to http://localhost:3000
 
 Click "Log in" on the web site via your browser and choose Authentication Method
 
