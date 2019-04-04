@@ -81,11 +81,11 @@ Enroll - Open the app, tap Scan QR CODE and  scan QR code provided by administra
 Open the Veridium Authenticator app on your mobile device
 
 ## Heroku or Local Build
-On Heroku
-    On a PC/Mac - open a browser to your heroku app
+If using Heroku: <br/>
+    On a PC/Mac, open a browser to your heroku app
 
-On local build
-     On a PC/Mac - open a browser to http://localhost:3000
+If on local build: <br/>
+     On a PC/Mac, open a browser to http://localhost:3000
 
 Click "Log in" on the web site via your browser and choose Authentication Method
 
