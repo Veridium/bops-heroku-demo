@@ -2,7 +2,7 @@
 
 A sample project to demonstrate the capabilities of IEEE 2410-2017
 
-API Calls
+# API Calls
 
 This project demonstrates the 3 core API calls and you can see them in action in profile_controller.rb and session_controller.rb
 
@@ -12,9 +12,9 @@ This project demonstrates the 3 core API calls and you can see them in action in
 
 3. RegisterSessionOpportunity - Register a new session opportunity. Returns QR code.
 
-Prerequisites
+# Prerequisites
 
-Access to a BOPS server
+Access to a BOPS server (see an Administrator)
 
 Generate or request a p12 Friend certificate from BOPS server (see an Administrator)
 
@@ -25,7 +25,7 @@ Extract public cert and private key from p12 file:
 % openssl pkcs12 -in FRIEND.p12 -out FRIEND.key.pem -nocerts -nodes
 ~~~~
 
-User account and password to enroll a mobile. (see an Administrator)
+User account, password, and email values to enroll a mobile. (see an Administrator)
 
 Enrollment QR code (see an Administrator)
 
@@ -35,11 +35,17 @@ BOPSSRV=<Your VeridiumID server like bops.example.com> (see an Administrator)
 
 iOS or Android phone with access to App Store
 
-App Deployment Options
+# App Deployment Options
 
-1. Run in Postman (see link at top)
+1. Run in Postman (see link at top) 
+    You can exercise the APIs within a Postman collection.
+    On a PC/Mac - Open Postman to your imported BOPS demo collection
+    Create an environment and set
+        url=<your BOPSSRV value>
+        email=<your assigned email value>
+    Add the client certificate and key for BOPSSRV to your Postman certificates in Settings.
 
-2. Deploy to Heroku (see link at top)
+2. Deploy to Heroku (see link at top) and populate the Config Vars
 
 Or to deploy manually
 ~~~~
@@ -66,25 +72,22 @@ Clone this repo and execute the following commands (assuming you have Rails inst
 % bundle exec rails s
 ~~~~
 
-Test
+# Test
 
 Install the Veridium Authenticator app (available on App Store and Play Store) on your mobile device.
 
 Enroll - Open the app, tap Scan QR CODE and  scan QR code provided by administrator
 
+Open the Veridium Authenticator app on your mobile device
+
+## Heroku or Local Build
 On Heroku
 
                 On a PC/Mac - Open a browser to your heroku app
 
-On Postman
-                On a PC/Mac - ***************************
-
 On local build
 
                 On a PC/Mac - Open a browser to http://localhost:3000/
-
-
-Open the Veridium Authenticator app on your mobile device
 
 Click "Log in" on the web site via your browser and choose Authentication Method
 
@@ -92,4 +95,8 @@ Auth Method QR - Use the QR code (select enrolled name in the mobile app and sca
 
 Auth Method PUSH - enter your account/email as displayed in the app (for authentication via Push-notification)
 
+## Postman
+On Postman
+
+                On a PC/Mac - Open Postman to BOPS collection and test APIs
  
